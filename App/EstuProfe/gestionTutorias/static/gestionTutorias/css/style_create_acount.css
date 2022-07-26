@@ -1,0 +1,381 @@
+:root {
+    --primario: #5299D3;
+    --primarioOscuro: #0B5563;
+    --secundario: #A2BCE0;
+    --secundarioOscuro: #5E5C6C;
+    --rojo: #DB3A34;
+    --blanco: #FFF;
+    --blancoMate: #EEEEEE;
+    --negro: #000;
+    --gris: #BEB8EB;
+    --fuentePrincipal: 'Josefin Sans', sans-serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:focus{
+    outline: none;
+}
+
+body{
+    background: var(--blancoMate);
+    font-family: var(--fuentePrincipal);
+    
+}
+
+/* FORMULARIO =================================== */
+
+.form_wrap{
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+    border: 1px black solid;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Informacion de Contacto*/
+
+.cantact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #4091EC;
+    opacity: 0.9;
+}
+
+.cantact_info{
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-image: url('../imagenes/create_acount.png');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.info_title,
+.info_items{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.info_title{
+    margin-bottom: 60px;
+}
+
+.info_title span{
+    font-size: 5rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2{
+    font-size: 4rem;
+    text-align: center;
+}
+
+a{
+    display: flex;
+    align-items: flex-start;
+    color: var(--primario);
+    font-size: 2rem;
+}
+
+a:hover{
+    color: var(--primarioOscuro);
+    font-size: 2.3rem;
+}
+
+.info_items p{
+    display: flex;
+    align-items: center;
+
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span{
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+
+/* Formulario de contacto*/
+form.form_contact{
+    width: 62%;
+    padding: 5rem;
+    padding-top: 2rem;
+}
+
+form.form_contact h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: var(--primarioOscuro);
+}
+
+form.form_contact .user_info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+    width: 30rem;
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input{
+    width: 100%;
+    padding: 8px 0px 5px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: var(--fuentePrincipal);
+	color: #5A5A5A;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+
+form.form_contact input[type="button"]{
+    width: 180px;
+	background: #4091EC;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+	font-family: var(--fuentePrincipal);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover{
+    background: #3371B6;
+}
+
+.names {
+    font-size: 5rem;
+}
+
+/* Ventas de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: var(--fuentePrincipal);
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+	cursor: pointer;
+}
+
+.btnSend {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.user_container{
+    display: flex;
+    justify-content:space-around;
+}
+
+.select-option {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.container-nacimiento {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nacimiento-datos{
+    display:inline-block;
+    text-align:center;
+}
+
+.btnHome{
+    width: 2rem;
+}
+
+.login_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre{
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.correo {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.genero {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.rol {
+    grid-column: 1/2;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.nacimiento{
+    grid-column: 1/2;
+    grid-row: 5;
+}
+
+.apellido {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.contrasena {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.educacion {
+    grid-column: 2/3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.telefono {
+    grid-column: 2/3;
+    grid-row: 4;
+}
+
+.siguiente {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+    grid-row: 5;
+    align-items: center;
+}
+
+.return_icon {
+    fill: currentColor var(--primario);
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.return{
+    grid-column: 1/2;
+    grid-row: 1;
+    border: 2px white solid;
+}
+
+.return:hover{
+    border-radius: 100%;
+    border: 2px var(--primarioOscuro) solid;
+}
+
+.title_title{
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.format_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
