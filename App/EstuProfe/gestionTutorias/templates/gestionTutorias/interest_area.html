@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EstuProfe - Crear cuenta</title>
+    <link rel="stylesheet" href="{% static 'gestionTutorias/css/style_interest_area.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="form_wrap">
+        <form action="" class="form_contact">
+            <div class="title">
+                <a class="return" href="{% url 'RegisterPage' %}"><img src="{% static 'gestionTutorias/img/return_icon.png' %}" alt="HTML tutorial" style="width:2rem;height:2rem;"></a>
+                <h2 class="title_title" >Elige tus areas de interes...</h2>
+            </div>
+
+            <h1>¡ Personalizacion de publicaciones !</h1><br>
+            <p class="description">Para poder darte una lista personalizada de publicaciones en tu inicio, dinos 
+                cuales temas son de tú interes y nos encargaremos de mostrarte únicamente lo que te importa.
+                <br><br>¡ De ésta forma <strong>no te esforzarás</strong> mucho en encontrar
+                a una persona para ayudar !</p>
+
+
+            <div class="user_container">
+                <div class="info_area">
+                    <label class="areas"><input class="areas_input" type="checkbox" name="area">Matemáticas</label><br>       
+                </div>
+
+                <div class="info_area">
+                    <label class="areas"><input class="areas_input" type="checkbox" name="area">Lenguas</label><br>       
+                </div>
+
+                <div class="info_area">
+                    <label class="areas"><input class="areas_input" type="checkbox" name="area">Ciencias</label><br>       
+                </div>
+
+                <div class="info_area">
+                    <label class="areas"><input class="areas_input" type="checkbox" name="area">Humanidades</label><br>       
+                </div>
+            </div>
+
+            <div class="crear_cuenta">
+                <a href="{% url 'TutorPage' %}" style="text-decoration: none;">Crear cuenta</a>
+            </div>
+        </form>
+
+        <section class="cantact_info">
+            <section class="info_items">
+                <p><span class="title_contact"></span></p>
+            </section>
+        </section>
+
+    </section>
+
+</body>
+</html>
