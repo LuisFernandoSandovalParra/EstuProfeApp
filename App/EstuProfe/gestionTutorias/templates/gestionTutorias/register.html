@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EstuProfe - Crear cuenta</title>
+    <link rel="stylesheet" href="{% static 'gestionTutorias/css/style_create_acount.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="form_wrap">
+        <form action="" class="form_contact">
+            <div class="title">
+                <a class="return" href="{% url 'LoginPage' %}"><img src="{% static 'gestionTutorias/img/return_icon.png' %}" alt="HTML tutorial" style="width:2rem;height:2rem;"></a>
+                <h2 class="title_title" >Ingresa tus datos personales</h2>
+            </div>
+
+            
+            <div class="user_container">
+                <div class="user_info">
+                    <div class="nombre format_div">
+                        <label for="names">Nombres</label>
+                        <input class="names" type="text" id="names">
+                    </div>
+
+                    <div class="correo format_div">
+                        <label for="phone">Correo electronico *</label>
+                        <input type="text" id="phone">
+                    </div>
+
+                    <div class="genero format_div">
+                        <label for="education">Género</label>
+                        <select class="select-option">
+                            <option value="Option 1">Masculino</option>
+                            <option value="Option 2">Femenino</option>
+                            <option value="Option 3">Prefiero no decirlo</option>
+                        </select>
+                    </div>
+                    
+                    <div class="rol format_div">
+                        <label for="education">Deseas ser...</label>
+                        <select class="select-option">
+                            <option value="Option 1">Estudiante</option>
+                            <option value="Option 2">Profesor</option>
+                        </select>
+                    </div>
+
+                    <div class="nacimiento format_div">
+                        <label for="mensaje">Fecha de nacimiento</label>
+                        <div class="container-nacimiento">
+                            <input class="nacimiento-datos" maxlength="2" placeholder="DD" type="text" style="width: 3.5rem;">
+                            <input class="nacimiento-datos" maxlength="2" placeholder="MM" type="text" style="width: 2.2rem;">
+                            <input class="nacimiento-datos" maxlength="4" placeholder="AAAA" type="text" style="width: 4rem;">
+                        </div>
+                    </div>
+
+                    <div class="apellido format_div">
+                        <label for="lastname">Apellidos</label>
+                        <input type="text" id="lastname">
+                    </div>
+
+                    <div class="contrasena format_div">
+                        <label for="password">Contraseña *</label>
+                        <input type="password" id="password">
+                    </div>
+
+                    <div class="educacion format_div">
+                        <label for="education">Nivel de Educación</label>
+                        <select class="select-option">
+                            <option value="Option 1">Primaria</option>
+                            <option value="Option 2">Secundaria</option>
+                            <option value="Option 3">Pregrado</option>
+                            <option value="Option 4">Posgrado</option>
+                            <option value="Option 5">Maestria</option>
+                            <option value="Option 6">Doctorado</option>
+                        </select>
+                    </div>
+                    
+                    <div class="telefono format_div">
+                        <label for="phone">Numero telefonico</label>
+                        <input type="text" id="phone">
+                    </div>
+                    
+                    <div class="siguiente">
+                        <a href="{% url 'InterestPage' %}" style="text-decoration: none;">Siguiente</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+
+        <section class="cantact_info">
+            <section class="info_items">
+                <p><span class="title_contact"></span></p>
+            </section>
+        </section>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <title>EstuProfe - Inicio de sesion</title>
+  <link rel='stylesheet'><link rel="stylesheet" href="{% static 'gestionTutorias/css/style_login.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="login-form">
+     <h1>EstuProfe</h1>
+    <form action="/login/" method="POST"> {% csrf_token %}
+      <div class="form-group ">
+        <p><input type="text" class="form-control" placeholder="Usuario" name="email"></p> 
+        <i class="fa fa-user"></i>
+      </div>
+      <p></p>
+      <div class="form-group log-status">
+        <p><input type="password" class="form-control" placeholder="Contraseña" name="password"></p> 
+        <i class="fa fa-lock"></i>
+      </div>
+      <h2 style="margin-bottom: 0px;" >Inicia sesión como:</h2>
+        <span class="alert">Invalid Credentials</span>
+        <div class="sesion__buttons">
+          <p>
+            <div class="sesion__buttons__create">
+              <button type="submit" class="button-17">Estudiante</button>
+          </div>
+          <div class="sesion__buttons__sign">
+              <button type="submit" class="button-17">Profesor</button>
+          </div>  
+          </p>
+        </div>
+        <div class="login-options">
+          <a class="login-options-create" href="{% url 'RegisterPage' %}">¿No tienes una cuenta?</a>
+        </div>    
+    </form> 
+     
+    
+</div>
+<!-- partial -->
+
+</body>
+</html>

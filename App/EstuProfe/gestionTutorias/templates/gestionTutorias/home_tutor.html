@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EstuProfe</title>
+    <link rel="stylesheet" href="{% static 'gestionTutorias/css/style_home_teacher.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <img style="padding-left: 2rem;" src="{% static 'gestionTutorias/img/logo.png' %}" alt="" width="60" height="60">
+            <input class="find_publication" type="text" placeholder="Buscar en EstuProfe">
+        </div>
+        <div class="container_name">
+            <a href="">Manuel Chaparro</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container_publications">
+            <div class="container_publications_p">
+                <div class="publications_title">
+                    <img class="publications_title_img" src="{% static 'gestionTutorias/img/male_teacher_icon.png' %}" alt="" width="50" height="50">
+                    <h1 class="publications_title_name">Profe Manuel Chaparro</h1>
+                    <p class="publications_title_info">Es hora de ayudar a tus estudiantes, escribeles
+                         un mensaje y oferta cuanto deseas por realizar la tutoria, si tu oferta le
+                         agrada, te la aceptará y podras enviarle tu numero en las notificaciones ! 
+                    </p>
+                </div>
+                <div class="publication">
+                    <label class="name_publication" for="">Fernanda Vargas</label>
+                    <img src="{% static 'gestionTutorias/img/arrow_bottom_icon.png' %}" alt="" width="20" height="20">
+                    <div class="publication_info">
+                        <div class="publication_info_titles">
+                            <label class="info_publication" for="">Matematicas</label>
+                            <img src="{% static 'gestionTutorias/img/arrow_right_icon.png' %}" alt="" width="20" height="20">
+                            <label class="info_publication" for="">Funciones Integrales</label>
+                        </div>
+                        <div class="publication_info_description">
+                            <label class="description" for="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 Aenean sagittis sagittis facilisis. Vivamus accumsan lacus eget
+                                  elit scelerisque, et pretium augue convallis. Nunc lacinia 
+                                  quam volutpat, vulputate turpis et, vehicula sapien. Ut sed 
+                                  ectus eu sem consectetur posuere quis ac tortor. Donec 
+                                  porttitor libero eu ex bibendum maximus. Sed quis cursus 
+                                  justo, vehicula pellentesque metus. Aenean sit amet imperdiet 
+                                  libero, quis ultricies ex.</label>
+                            <input class="description_offer" maxlength="100" type="text" placeholder="Escribe un mensaje !">
+                            <input class="offer" maxlength="6" type="text" placeholder="$">
+                            <input style="border:0" class="send" type="image" src="{% static 'gestionTutorias/img/send_icon.png' %}" width="50" height="50"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <label class="name_publication" for="">Raul Moreno</label>
+                    <img src="{% static 'gestionTutorias/img/arrow_bottom_icon.png' %}" alt="" width="20" height="20">
+                    <div class="publication_info">
+                        <div class="publication_info_titles">
+                            <label class="info_publication" for="">Lenguas</label>
+                            <img src="{% static 'gestionTutorias/img/arrow_right_icon.png' %}" alt="" width="20" height="20">
+                            <label class="info_publication" for="">Verbo to be</label>
+                        </div>
+                        <div class="publication_info_description">
+                            <label class="description" for="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 Aenean sagittis sagittis facilisis. Vivamus accumsan lacus eget
+                                  elit scelerisque, et pretium augue convallis. Nunc lacinia 
+                                  quam volutpat, vulputate turpis et, vehicula sapien.  Donec 
+                                  porttitor libero eu ex bibendum maximus. Aenean sit amet imperdiet 
+                                  libero, quis ultricies ex.</label>
+                                  <input class="description_offer" maxlength="100" type="text" placeholder="Escribe un mensaje !">
+                                  <input class="offer" maxlength="6" type="text" placeholder="$">
+                                  <input style="border:0" class="send" type="image" src="{% static 'gestionTutorias/img/send_icon.png' %}" width="50" height="50"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notificaciones">
+            <h1>Notificaciones</h1>
+
+            <div class="notificacion">
+                <p class="notificacion_descripcion">Alejandro acepto tu oferta para Lenguas: 
+                    Was/Were por $20.000 pesos. ¿ Deseas enviarle tu número ?</p>
+                <button class="button-17">Enviar</button>
+            </div>
+
+            <div class="notificacion">
+                <p class="notificacion_descripcion">Alejandro acepto tu oferta para Lenguas: 
+                    Was/Were por $20.000 pesos. ¿ Deseas enviarle tu número ?</p>
+                <button class="button-17">Enviar</button>
+            </div>
+
+            <div class="notificacion">
+                <p class="notificacion_descripcion">Alejandro acepto tu oferta para Lenguas: 
+                    Was/Were por $20.000 pesos. ¿ Deseas enviarle tu número ?</p>
+                <button class="button-17">Enviar</button>
+            </div>
+
+            <div class="notificacion">
+                <p class="notificacion_descripcion">Alejandro acepto tu oferta para Lenguas: 
+                    Was/Were por $20.000 pesos. ¿ Deseas enviarle tu número ?</p>
+                <button class="button-17">Enviar</button>
+            </div>
+
+        </div>
+
+        </div>
+    </main>
+</body>
